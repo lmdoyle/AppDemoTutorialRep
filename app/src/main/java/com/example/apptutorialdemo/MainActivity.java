@@ -2,22 +2,24 @@ package com.example.apptutorialdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     public void clickFunction(View view){
 
+        ImageView picture = findViewById(R.id.catPic);
 
-        EditText nameText = findViewById(R.id.nameText);
+        Drawable cat2 = getResources().getDrawable(R.drawable.cat2);
 
-        Log.i("Username", nameText.getText().toString());
+        picture.setImageDrawable(cat2);
 
-        Toast.makeText(MainActivity.this, "Hi There, "+ nameText.getText().toString(), Toast.LENGTH_LONG).show();
 
 
     }
