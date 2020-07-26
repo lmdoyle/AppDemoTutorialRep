@@ -15,6 +15,7 @@
         android:layout_marginLeft="77dp"
         android:layout_marginEnd="98dp"
         android:layout_marginRight="98dp"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
