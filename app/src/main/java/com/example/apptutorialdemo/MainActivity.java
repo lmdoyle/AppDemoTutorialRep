@@ -2,24 +2,21 @@ package com.example.apptutorialdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public void clickFunction(View view){
+    public void fade(View view) throws InterruptedException {
 
-        ImageView picture = findViewById(R.id.catPic);
+        ImageView image = findViewById(R.id.mickey);
 
-        Drawable cat2 = getResources().getDrawable(R.drawable.cat2);
+        ImageView image2 = findViewById(R.id.imageView2);
 
-        picture.setImageDrawable(cat2);
+        image.animate().alpha(0.0f).setDuration(2000);
 
+        image2.animate().alpha(1.0f).setDuration(2000);
 
 
     }
