@@ -12,11 +12,11 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView image = findViewById(R.id.mickey);
 
-        ImageView image2 = findViewById(R.id.imageView2);
+        //ImageView image2 = findViewById(R.id.imageView2);
 
-        image.animate().alpha(0.0f).setDuration(2000);
+        image.animate().scaleX(1f).scaleY(1f).rotation(1800f).alpha(1.0f).setDuration(2000);
 
-        image2.animate().alpha(1.0f).setDuration(2000);
+        //image2.animate().alpha(1.0f).setDuration(2000);
 
 
     }
@@ -24,7 +24,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView image = findViewById(R.id.mickey);
+
+        image.setScaleX(0.1f);
+        image.setScaleY(0.1f);
+        image.setAlpha(0.0f);
     }
 }
